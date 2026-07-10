@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blip — Learning Just Got More Fun</title>
+<title>Blip | Learning Just Got More Fun</title>
   <meta name="description" content="Blip is Nigeria's upcoming virtual classroom for JS1–SS3 students. Live classes, amazing teachers, real results.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -160,21 +160,20 @@
 
     .btn-sm{ padding:10px 20px; font-size:14px; }
 
-    /* --- hero teacher button special style --- */
+    /* --- hero teacher button styled like primary but orange/terracotta --- */
     .btn-teacher-hero {
-      background: rgba(255,255,255,0.6);
-      color: rgb(var(--secondary-dark));
-      border: 2px solid rgb(var(--secondary));
-      backdrop-filter: blur(8px);
-      box-shadow: 0 4px 12px rgba(232,160,124,0.2);
-      font-weight: 600;
-    }
-    .btn-teacher-hero:hover {
       background: rgb(var(--secondary));
       color: #fff;
-      transform: translateY(-3px) scale(1.02);
-      box-shadow: 0 8px 20px rgba(232,160,124,0.35);
-      border-color: rgb(var(--secondary));
+      box-shadow: 0 8px 0 rgb(var(--secondary-dark)), var(--shadow-soft);
+    }
+    .btn-teacher-hero:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 11px 0 rgb(var(--secondary-dark)), var(--shadow-lift);
+      background: rgb(var(--secondary-dark));
+    }
+    .btn-teacher-hero:active {
+      transform: translateY(2px);
+      box-shadow: 0 4px 0 rgb(var(--secondary-dark));
     }
 
     /* ============================================
@@ -663,7 +662,7 @@
 
       <div class="hero-actions">
         <a href="#waitlist" class="btn btn-primary btn-glow">Join Waitlist</a>
-        <a href="#teachers" class="btn btn-teacher-hero">👩🏽‍🏫 Become a Teacher</a>
+        <a href="#teachers" class="btn btn-teacher-hero">Become a Teacher</a>
       </div>
 
       <div class="hero-trust">
